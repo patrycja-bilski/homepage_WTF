@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header id="top">
+        <nav>
+            <a class="headerLink" href="index.html">Strona główna</a>
+            <a class="headerLink" href="nauka-html.html">Nauka html</a>
+            <a class="headerLink" href="nauka-css.html">Nauka css</a>
+            <a class="headerLink" href="nauka-java-script.html">Nauka Java Script</a>
+            <a class="headerLink" href="nauka-terminal.html">Nauka terminala</a>
+        </nav>
+    </header>
+
+    <main>
+        <header id="mainHeader">
+            <h1 class="pinkHeader">Patrycja Bilski - Strona Domowa</h1>
+        </header>
+
+        <section>
+            <h2 class="whiteHeader">Kim jestem?</h2>
+            <img src="portret-na-strone-glowna.jpeg" alt="Uśmiechnięta młoda kobieta">
+            <p class="commonText">Jestem Patrycja. <b><em>Uczę się</em> programowania</b>.
+                A przynajmniej próbuję z nowym kursem <a class="commonLink" href="https://cotenfrontend.pl">WTF</a> ;)<br>
+                <a href="#notatki">Przejdź do notatek</a></p>
+        </section>
+
+        <section id="notatki">
+            <h2 class="whiteHeader">Notatki z WTF: Co ten frontend</h2>
+
+            <article>
+                <h3>Tydzień pierwszy</h3>
+                <p class="commonText">Fajny wstęp</p>
+            </article>
+
+            <article>
+                <h3>Tydzień drugi</h3>
+                <p class="commonText">Podstawowe znaczniki: head, body, header, main, footer, section, article, h1-h6, p.<br>
+                    Tester kodu (adres): https://validator.w3.org/nu/#textarea<br>
+                    Pierwsze spotkanie z CSS<br></p>
+            </article>
+
+            <article>
+                <h3>Tydzień trzeci</h3>
+                <p class="commonText">Kolejne znaczniki: b, i, strong (semantyczny), em (semantyczny),
+                    a (do linkowania), nav (do nawigacji między podstronami), img.<br>
+                    Atrybuty: id, class<br></p>
+            </article>
+        </section>
+    </main>
+
+    <footer id="bottom">
+        Strona domowa Patrycji Bilski, wszystkie treści są efektem szkolenia WTF: Co ten frontend. <br>
+        <a href="#top">Przejdź do góry strony</a>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

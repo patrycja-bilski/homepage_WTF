@@ -1,0 +1,37 @@
+.commonText {
+    color: grey;
+}
+body {
+    background: rgb(240, 221, 224);
+}
+section {
+    background:  rgb(240, 221, 224)f;
+}
+
+
+.whiteHeader {
+    color: white;
+    background: palevioletred;
+}
+.pinkHeader {
+    color: palevioletred;
+    background: white; 
+}
+#mainHeader {
+    background: white;
+}
+#top {
+    color: palevioletred;
+}
+#bottom {
+    color: palevioletred;
+}
+.headerLink {
+    color: palevioletred;
+}
+a {
+    color:white;
+}
+.commonLink {
+    color: grey;
+}
