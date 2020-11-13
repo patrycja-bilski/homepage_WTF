@@ -11,49 +11,61 @@
 <body>
 
     <header id="top">
-        <nav>
-            <a class="headerLink" href="index.html">Strona główna</a>
-            <a class="headerLink" href="nauka-html.html">Nauka html</a>
-            <a class="headerLink" href="nauka-css.html">Nauka css</a>
-            <a class="headerLink" href="nauka-java-script.html">Nauka Java Script</a>
-            <a class="headerLink" href="nauka-terminal.html">Nauka terminala</a>
+        <nav class="navigation">
+            <a class="navigation__link navigation__link--strona-glowna" href="index.html">Strona główna</a>
+            <a class="navigation__link navigation__link--nauka-html" href="nauka-html.html">Nauka html</a>
+            <a class="navigation__link navigation__link--nauka-css" href="nauka-css.html">Nauka css</a>
+            <a class="navigation__link navigation__link--nauka-Java-Script" href="nauka-java-script.html">Nauka Java Script</a>
+            <a class="navigation__link navigation__link--nauka-terminala" href="nauka-terminal.html">Nauka terminala</a>
         </nav>
     </header>
 
     <main>
-        <header id="mainHeader">
-            <h1 class="pinkHeader">Patrycja Bilski - Strona Domowa</h1>
+        <header id="main-header">
+            <h1 class="first-level-header first-level-header--js" id="my-name">Patrycja Bilski - Strona Domowa</h1>
         </header>
 
         <section>
-            <h2 class="whiteHeader">Kim jestem?</h2>
+            <h2 class="second-level-header">Kim jestem?</h2>
             <img src="portret-na-strone-glowna.jpeg" alt="Uśmiechnięta młoda kobieta">
-            <p class="commonText">Jestem Patrycja. <b><em>Uczę się</em> programowania</b>.
-                A przynajmniej próbuję z nowym kursem <a class="commonLink" href="https://cotenfrontend.pl">WTF</a> ;)<br>
+            <p class="common-text">Jestem Patrycja. <b><em>Uczę się</em> programowania</b>.
+                A przynajmniej próbuję z nowym kursem <a class="common-link" href="https://cotenfrontend.pl">WTF</a> ;)<br>
                 <a href="#notatki">Przejdź do notatek</a></p>
         </section>
 
-        <section id="notatki">
-            <h2 class="whiteHeader">Notatki z WTF: Co ten frontend</h2>
+        <section class="notes" id="notatki">
+            <h2 class="second-level-header">Notatki z WTF: Co ten frontend</h2>
 
-            <article>
-                <h3>Tydzień pierwszy</h3>
-                <p class="commonText">Fajny wstęp</p>
+            <article class="notes__week-by-week">
+                <h3 class="third-level-header">Tydzień pierwszy</h3>
+                <p class="common-text">Fajny wstęp</p>
             </article>
 
-            <article>
-                <h3>Tydzień drugi</h3>
-                <p class="commonText">Podstawowe znaczniki: head, body, header, main, footer, section, article, h1-h6, p.<br>
+            <article class="notes__week-by-week">
+                <h3 class="third-level-header">Tydzień drugi</h3>
+                <p class="common-text">Podstawowe znaczniki: head, body, header, main, footer, section, article, h1-h6, p.<br>
                     Tester kodu (adres): https://validator.w3.org/nu/#textarea<br>
                     Pierwsze spotkanie z CSS<br></p>
             </article>
 
-            <article>
-                <h3>Tydzień trzeci</h3>
-                <p class="commonText">Kolejne znaczniki: b, i, strong (semantyczny), em (semantyczny),
+            <article class="notes__week-by-week">
+                <h3 class="third-level-header">Tydzień trzeci</h3>
+                <p class="common-text">Kolejne znaczniki: b, i, strong (semantyczny), em (semantyczny),
                     a (do linkowania), nav (do nawigacji między podstronami), img.<br>
                     Atrybuty: id, class<br></p>
             </article>
+
+            <article class="notes__week-by-week">
+                <h3 class="third-level-header">Tydzień czwarty</h3>
+                <p class="common-text">Poznajemy narzędzia do tworzenia i obsługi repozytorium.<br>
+                Poznanie znacznika div i nauka "opakowywania" treści w boxy.<br>
+                Jednostki w css: px, % (procenty zawsze liczymy względem rodzica), vw - viewport width (dotyczy procentowej wartości całej szerości okna), vh - viewport height (dotyczy procentowej wartości całej wysokości okna) <br>
+                Box model <br>
+                BEM - block element modifier (nazywanie klas na zasadzie: .hand lub .hand__finger lub .hand__finger--thumb)<br>
+                DOM - document object model (dot. Java Script)
+                </p>
+            </article>
+
         </section>
     </main>
 

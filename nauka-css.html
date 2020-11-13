@@ -9,35 +9,83 @@
 </head>
 
 <body>
-
     <header id="top">
-        <nav>
-            <a class="headerLink" href="index.html">Strona główna</a>
-            <a class="headerLink" href="nauka-html.html">Nauka html</a>
-            <a class="headerLink" href="nauka-css.html">Nauka css</a>
-            <a class="headerLink" href="nauka-java-script.html">Nauka Java Script</a>
-            <a class="headerLink" href="nauka-terminal.html">Nauka terminala</a>
+        <nav class="navigation">
+            <a class="navigation__link navigation__link--strona-glowna" href="index.html">Strona główna</a>
+            <a class="navigation__link navigation__link--nauka-html" href="nauka-html.html">Nauka html</a>
+            <a class="navigation__link navigation__link--nauka-css" href="nauka-css.html">Nauka css</a>
+            <a class="navigation__link navigation__link--nauka-Java-Script" href="nauka-java-script.html">Nauka Java Script</a>
+            <a class="navigation__link navigation__link--nauka-terminala" href="nauka-terminal.html">Nauka terminala</a>
         </nav>
     </header>
 
     <main>
-        <header id="mainHeader">
-            <h1 class="pinkHeader">Nauka css</h1>
+        <header id="main-header">
+            <h1 class="first-level-header first-level-header--js" id="learning-css">Nauka css</h1>
         </header>
        
         <img src="obrazek-nauka-html.jpeg" alt="Młody człowiek uczący się przy komputerze">
        
-        <section id="notatki">
-            <h2 class="whiteHeader">Co nowego></h2>
+        <section class="notes" id="notatki">
+            <h2 class="second-level-header">Co nowego?</h2>
 
-            <article>
-                <h3 class="whiteHeader">Tydzień drugi</h3>
-                <p class="commonText">Stylowanie wg znaczników.</p>
+            <article class="notes__week-by-week">
+                <h3 class="third-level-header">Tydzień drugi</h3>
+                <p class="common-text">Stylowanie wg znaczników.</p>
             </article>
 
-            <article>
-                <h3 class="whiteHeader">Tydzień trzeci</h3>
-                <p class="commonText">Stylowanie wg atrybutów id (#), class (.).</p>
+            <article class="notes__week-by-week">
+                <h3 class="third-level-header">Tydzień trzeci</h3>
+                <p class="common-text">Stylowanie wg atrybutów id (#), class (.).</p>
+            </article>
+
+            <article class="notes__week-by-week">
+                <h3 class="third-level-header">Tydzień czwarty</h3>
+                <p class="common-text">Nowe własności:<br>
+                    <strong>display</strong>
+                    display: block - wyświetlanie blokowe elementów; gdy nie ma innych własności elementy zajmują całą szerokość linii i ustawiają się jeden pod drugim (znaczniki: section, article, main, p mają domyślnie display block)<br>
+                    display: inline - elementy ustawiają się obok siebie i ograniczone są do wielkości zamieszczonej w nich treści (np. znacznik: a ma domyślnie display inline); nie mogą mieć zdefiniowanej wysokości i szerokości<br>
+                    display: inline-block - elementy zachowują się jak elementy inline ale dostępne są dla nich dodatkowe własności, które są niedostępne dla własności inline, np. width i height <br>
+                    <strong>width</strong> - szerokość <br>
+                    <strong>height</strong> - wysokość <br>
+                    <strong>max-width</strong> - maksymalna szerokość <br>
+                    <strong>max-height</strong> - maksymalna wysokość <br>
+                    <strong>min-width</strong> - minimalna szerokość <br>
+                    <strong>min-height</strong> - minimalna wysokość <br> 
+                    <strong>overflow</strong> - pozwala na "odcinanie" wystającej poza box treści, np. <br>
+                     - overflow: hidden - ukrywa nadmiar tekstu; bez podanej wysokości dopasuje wysokość danego elementu do wszystkich powiązanych z nim elementów <br>
+                     - overflow: hidden - domyślna własność, czyli wszystko widoczne <br>
+                     - overflow: auto - pojawia się scroll <br>
+                    <strong>BOX MODEL</strong>: <br>
+                    - <i>element</i> <br>
+                    - <i>padding</i> - wewnętrzny margines (podanie jednej wartości ustawia taki sam padding z każdej strony boxa, padding-top dot. górnej krawędzi, padding-right dot. prawej krawędzi, padding-bottom dot. dolnej krawędzi, padding-left dot. lewej krawędzi) <br>
+                    w skrócie wielkość paddingu można zapisać podając same wartości <br>
+                    np. padding: 10px 20px 30px 40px; dotyczy odpowiednio wartości: góra, prawa, dół, lewa <br>
+                    np. padding: 10 px 20px; dotyczy wartości lustrzanych: pierwsza wartość to góra-dół, druga wartość to prawo-lewo <br>
+                    - <i>border</i> - ramka, składa się z trzech wartości: width (szerokość), style (rodzaj linii), color (kolor)<br>
+                    border-width (wartości można wpisywać tak samo jak w przypadku paddingu)<br>
+                    border-style: solid (stały) lub dashed (przerywany) lub dotted (kropkowany) <br>
+                    border-color <br>
+                    border-radius - pozwala na zaokrąglenie naszego elementu; gdy ustawimy wartość na 50% otrzymamy z kwadratowego elementu koło <br>
+                    W skrócie możemy określić właściwości border w następujący sposób: <br>
+                    border: 10px solid #fff; lub border-left: 20px solid blue i analogicznie do pozostałych krawędzi. <br>
+                    - <i>margin</i> - zewnętrzny margines nie będący już częścią naszego elementu; wartości zapisujemy tak samo jak w przypadku paddingu. Działa tylko przy elementach blokowych. <br>
+                    własność margin: __px auto; zależy od własności display <br>
+                    display: inline-block; - zeruje marginesy w środku <br>
+                    display: block; - elementy się wyśrodkują, pod warunkiem, że mają zdefiniowaną szerokość <br>
+                    <strong>box-sizing</strong>: <br>
+                    box-sizing: content-box; to domyślna własność =width elementu content<br>
+                    box-sizing: border-box; =width elementów content+padding+border<br>
+                    <strong>position</strong>: <br>
+                    - position: static; to domyślna własność <br>
+                    - position: relative; czyli pozycja względna, tzn. względem tego elementu będą "ustawiane" pozostałe elementy <br>
+                    - position: absolute; - dodatkowe własności: top, right, bottom, left służą do dokładnego określenia położenia elementu względem elementu nadrzędnego (mającego position: relative;) lub całej strony, wartości te wyrażamy w px lub % <br>
+                    - position: fixed; ma bardzo podobne właściwości do position: absolute; różni się tym, że element jest "przyklejony" na stałe w ustalonym miejscu <br>
+                    - position: sticky; element pozostaje widoczny na stronie podczas scrollowania od określonego atrybutem "top" miejsca aż do dołu elementu <br>
+                    <strong>z-index</strong> - definiuje kolejność/ważność elementów na stronie, wyrażony za pomocą liczby całkowitej, za pomocą tego atrybutu możemy definiować warstwy <br>
+                    <strong>float</strong> - służy do określenia opływania elementów <br>
+                    <strong>clear</strong> <br>
+                </p>
             </article>
         </section>
     </main>

@@ -11,28 +11,28 @@
 <body>
 
     <header id="top">
-        <nav>
-            <a class="headerLink" href="index.html">Strona główna</a>
-            <a class="headerLink" href="nauka-html.html">Nauka html</a>
-            <a class="headerLink" href="nauka-css.html">Nauka css</a>
-            <a class="headerLink" href="nauka-java-script.html">Nauka Java Script</a>
-            <a class="headerLink" href="nauka-terminal.html">Nauka terminala</a>
+        <nav class="navigation">
+            <a class="navigation__link navigation__link--strona-glowna" href="index.html">Strona główna</a>
+            <a class="navigation__link navigation__link--nauka-html" href="nauka-html.html">Nauka html</a>
+            <a class="navigation__link navigation__link--nauka-css" href="nauka-css.html">Nauka css</a>
+            <a class="navigation__link navigation__link--nauka-Java-Script" href="nauka-java-script.html">Nauka Java Script</a>
+            <a class="navigation__link navigation__link--nauka-terminala" href="nauka-terminal.html">Nauka terminala</a>
         </nav>
     </header>
 
     <main>
-        <header id="mainHeader">
-            <h1 class="pinkHeader">Nauka terminala</h1>
+        <header id="main-header">
+            <h1 class="first-level-header first-level-header--js" id="learning-terminal">Nauka terminala</h1>
         </header>
 
         <img src="obrazek-kod-niebieski-fiolet.jpeg" alt="Kod na monitorze w kolorystyce niebiesko-fioletowej">
 
-        <section id="notatki">
-            <h2 class="whiteHeader">Poznane polecenia</h2>
+        <section class="notes" id="notatki">
+            <h2 class="second-level-header">Poznane polecenia</h2>
 
-            <article>
-                <h3 class="whiteHeader">Tydzień trzeci</h3>
-                <p class="commonText">cd - wejście do katalogu<br>
+            <article class="notes__week-by-week">
+                <h3 class="third-level-header">Tydzień trzeci</h3>
+                <p class="common-text">cd - wejście do katalogu<br>
                 cd .. - przejście do katalogu poziom wyzej<br>
                 cd ../.. - przejście do katalogu dwa poziomy wyzej<br>
                 ls - lista zawartości katalogu<br>
@@ -41,9 +41,9 @@
                 code . - otwórz plik w Visual Studio Code</p>
             </article>
 
-            <article>
-                <h3 class="whiteHeader">Tydzień czwarty</h3>
-                <p class="commonText">git config --global user.name "" oraz git config --global user.email - ustawienia w git<br>
+            <article class="notes__week-by-week">
+                <h3 class="third-level-header">Tydzień czwarty</h3>
+                <p class="common-text">git config --global user.name "" oraz git config --global user.email - ustawienia w git<br>
                 git config --get user.name "" oraz git config --get user.email - sprawdzenie ustawień<br>
                 <strong>git init - tworzy nowe puste repozytorium w katalogu<br>
                 git status - podgląd plików w katalogu i ich stan<br>
@@ -51,7 +51,7 @@
                 git commit -m "nazwa zmian"<br>
                 gitk - pokazuje historię zmian w wersji graficznej</strong><br>
                 git push - komenda wrzucenia zmiany na github <br>
-                <srtong>Podstawowy flow poleceń w terminalu: git add . / git commit -m "opis zmiany" / git push </srtong>
+                <strong>Podstawowy flow poleceń w terminalu: git add . / git commit -m "opis zmiany" / git push </strong>
                 </p>
             </article>
 

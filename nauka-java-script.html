@@ -11,29 +11,53 @@
 <body>
 
     <header id="top">
-        <nav>
-            <a class="headerLink" href="index.html">Strona główna</a>
-            <a class="headerLink" href="nauka-html.html">Nauka html</a>
-            <a class="headerLink" href="nauka-css.html">Nauka css</a>
-            <a class="headerLink" href="nauka-java-script.html">Nauka Java Script</a>
-            <a class="headerLink" href="nauka-terminal.html">Nauka terminala</a>
+        <nav class="navigation">
+            <a class="navigation__link navigation__link--strona-glowna" href="index.html">Strona główna</a>
+            <a class="navigation__link navigation__link--nauka-html" href="nauka-html.html">Nauka html</a>
+            <a class="navigation__link navigation__link--nauka-css" href="nauka-css.html">Nauka css</a>
+            <a class="navigation__link navigation__link--nauka-Java-Script" href="nauka-java-script.html">Nauka Java Script</a>
+            <a class="navigation__link navigation__link--nauka-terminala" href="nauka-terminal.html">Nauka terminala</a>
         </nav>
     </header>
 
     <main>
-        <header id="mainHeader">
-            <h1 class="pinkHeader">Nauka Java Script</h1>
+        <header id="main-header">
+            <h1 class="first-level-header first-level-header--js" id="learning-java-script">Nauka Java Script</h1>
         </header>
 
         <img src="obrazek-kod-niebieski-fiolet.jpeg" alt="Kod na monitorze w kolorystyce niebiesko-fioletowej">
 
-        <section id="notatki">
-            <h2 class="whiteHeader">Co nowego?</h2>
+        <section class="notes" id="notatki">
+            <h2 class="second-level-header">Co nowego?</h2>
 
-            <article>
-                <h3 class="whiteHeader">Tydzień trzeci</h3>
-                <p class="commonText">Pierwsze spotkanie z Java Script. <br>
+            <article class="notes__week-by-week">
+                <h3 class="third-level-header">Tydzień trzeci</h3>
+                <p class="common-text">Pierwsze spotkanie z Java Script. <br>
                     Java SCript odpowiada za interakcje na stronie.</p>
+            </article>
+
+            <article class="notes__week-by-week">
+                <h3 class="third-level-header">Tydzień czwarty</h3>
+                <p class="common-text"><strong>Zmienne w Java Script (zmienna to wskazanie na jakąś wartość):</strong> <br>
+                <b>const</b> - zmienne mające stałe połączenie z jedną wartością, np.: <br>
+                const name = 'Patrycja'; <br>
+                const name = 34; <br>
+                <b>let</b> - zmienne, których połączenie możemy przepinać, ale definiujemy tylko raz, np.: <br>
+                let isHappy = false; <br>
+                isHappy = true; <br>
+                isHappy = 'tak'; <br>
+                <strong>Typy proste w JS (primitives) (określają, jakiego rodzaju dane są przechowywane w zmiennych):</strong> <br>
+                <i>String</i> - tekst, otaczamy ' lub " <br>
+                <i>Number</i> - liczba <br>
+                <i>Bigint</i> - duża liczba, większa niż 2<sup>53</sup> <br>
+                <i>boolean</i> - true lub false <br>
+                <i>null</i> - wartość celowa niezdefiniowana <br>
+                <i>undefined</i> - brak definicji <br>
+                <i>*symbol</i> - tworzy "unikalne opakowanie" <br>
+                <strong>DOM - document object model</strong> służy do odwoływania się do elementów<br>
+                document.querySelector('.selector') <br>
+                <i>nazwaZmiennejQuerySelector.</i>innerHTML='treść' - służy do podmieniania np. treści <br>
+                </p>
             </article>
 
         </section>
