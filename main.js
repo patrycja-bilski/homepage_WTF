@@ -6,4 +6,4 @@ console.log(
 );
 
 
-const heading = document.querySelector('.first-level-header--js');
+const heading = document.querySelector('.first-level-heading--js');

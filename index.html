@@ -20,44 +20,44 @@
         </nav>
     </header>
 
-    <main>
-        <header id="main-header">
-            <h1 class="first-level-header first-level-header--js" id="my-name">Patrycja Bilski - Strona Domowa</h1>
+    <main class="main">
+        <header class="main__header" id="main-header">
+            <h1 class="main__first-level-heading  first-level-heading--js" id="my-name">Patrycja Bilski - Strona Domowa</h1>
         </header>
 
-        <section>
-            <h2 class="second-level-header">Kim jestem?</h2>
-            <img src="portret-na-strone-glowna.jpeg" alt="Uśmiechnięta młoda kobieta">
-            <p class="common-text">Jestem Patrycja. <b><em>Uczę się</em> programowania</b>.
+        <section class="about-me">
+            <h2 class="about-me__second-level-heading">Kim jestem?</h2>
+            <img class="about-me__my-picture" src="portret-na-strone-glowna.jpeg" alt="Uśmiechnięta młoda kobieta">
+            <p class="about-me__common-text">Jestem Patrycja. <b><em>Uczę się</em> programowania</b>.
                 A przynajmniej próbuję z nowym kursem <a class="common-link" href="https://cotenfrontend.pl">WTF</a> ;)<br>
                 <a href="#notatki">Przejdź do notatek</a></p>
         </section>
 
         <section class="notes" id="notatki">
-            <h2 class="second-level-header">Notatki z WTF: Co ten frontend</h2>
+            <h2 class="notes__second-level-heading">Notatki z WTF: Co ten frontend</h2>
 
-            <article class="notes__week-by-week">
-                <h3 class="third-level-header">Tydzień pierwszy</h3>
-                <p class="common-text">Fajny wstęp</p>
+            <article class="notes__summary notes__summary--week-one">
+                <h3 class="notes__third-level-heading">Tydzień pierwszy</h3>
+                <p class="notes__common-text">Fajny wstęp</p>
             </article>
 
-            <article class="notes__week-by-week">
-                <h3 class="third-level-header">Tydzień drugi</h3>
-                <p class="common-text">Podstawowe znaczniki: head, body, header, main, footer, section, article, h1-h6, p.<br>
+            <article class="notes__summary notes__summary--week-two">
+                <h3 class="notes__third-level-heading">Tydzień drugi</h3>
+                <p class="notes__common-text">Podstawowe znaczniki: head, body, header, main, footer, section, article, h1-h6, p.<br>
                     Tester kodu (adres): https://validator.w3.org/nu/#textarea<br>
                     Pierwsze spotkanie z CSS<br></p>
             </article>
 
-            <article class="notes__week-by-week">
-                <h3 class="third-level-header">Tydzień trzeci</h3>
-                <p class="common-text">Kolejne znaczniki: b, i, strong (semantyczny), em (semantyczny),
+            <article class="notes__summary notes__summary--week-three">
+                <h3 class="notes__third-level-heading">Tydzień trzeci</h3>
+                <p class="notes__common-text">Kolejne znaczniki: b, i, strong (semantyczny), em (semantyczny),
                     a (do linkowania), nav (do nawigacji między podstronami), img.<br>
                     Atrybuty: id, class<br></p>
             </article>
 
-            <article class="notes__week-by-week">
-                <h3 class="third-level-header">Tydzień czwarty</h3>
-                <p class="common-text">Poznajemy narzędzia do tworzenia i obsługi repozytorium.<br>
+            <article class="notes__summary notes__summary--week-four">
+                <h3 class="notes__third-level-heading">Tydzień czwarty</h3>
+                <p class="notes__common-text">Poznajemy narzędzia do tworzenia i obsługi repozytorium.<br>
                 Poznanie znacznika div i nauka "opakowywania" treści w boxy.<br>
                 Jednostki w css: px, % (procenty zawsze liczymy względem rodzica), vw - viewport width (dotyczy procentowej wartości całej szerości okna), vh - viewport height (dotyczy procentowej wartości całej wysokości okna) <br>
                 Box model <br>
@@ -69,7 +69,7 @@
         </section>
     </main>
 
-    <footer id="bottom">
+    <footer class="footer" id="bottom">
         Strona domowa Patrycji Bilski, wszystkie treści są efektem szkolenia WTF: Co ten frontend. <br>
         <a href="#top">Przejdź do góry strony</a>
     </footer>

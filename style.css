@@ -1,4 +1,4 @@
-.commonText {
+p {
     color: grey;
 }
 body {
@@ -9,15 +9,20 @@ section {
 }
 
 
-.whiteHeader {
-    color: white;
-    background: palevioletred;
-}
-.pinkHeader {
+
+h1 {
     color: palevioletred;
     background: white; 
 }
-#mainHeader {
+h2 {
+    color: white;
+    background: palevioletred;
+}
+h3 {
+    color: white;
+    background: palevioletred;
+}
+#main-header {
     background: white;
 }
 #top {
@@ -26,12 +31,12 @@ section {
 #bottom {
     color: palevioletred;
 }
-.headerLink {
+.navigation {
     color: palevioletred;
 }
 a {
     color:white;
 }
-.commonLink {
+.common-link {
     color: grey;
 }
